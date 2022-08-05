@@ -1,0 +1,30 @@
+{
+  "name": "kenya-regions",
+  "version": "1.0.0",
+  "description": "Kenya regions locations for use in applications. These consists of counties, sub-counties, constituencies and wards.",
+  "main": "api/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "lint:watch": "yarn run format:check",
+    "lint:format": "yarn run format:write",
+    "lint:fix": "eslint --fix './**/*.{mjs,js,jsx}'",
+    "test": "mocha --recursive --require @babel/register ./__tests__/ --reporter spec --timeout 10000 --exit --gr",
+    "test:coverage": "nyc npm run test --reporter=lcov --reporter=text-summary ava --scripts-prepend-node-path"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nicanor008/kenya-regions.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nicanor008/kenya-regions/issues"
+  },
+  "homepage": "https://github.com/Nicanor008/kenya-regions#readme",
+  "dependencies": {
+    "mongoose": "^6.4.7"
+  }
+}
