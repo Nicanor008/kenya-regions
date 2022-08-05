@@ -1,10 +1,30 @@
-import mongoose from "mongoose";
-import Counties from "./models/counties.js";
+import axios from 'axios';
 
+const API_URL = 'http://localhost:4001/counties'
+
+// Retrieve all counties
 export const GetCounties = async () => {
-  // DB connection
-  mongoose.connect(process.env.DB_URI)
+  try {
+    const config = {
+      method: 'GET',
+      url: API_URL,
+      headers: {
+        'Content-Type': 'application/json'
+      },
+    };
+  
+    const response = await axios(config)
+    return response?.data
+  } catch(e) {
+    let message = e.message
+    
+    if (e.response) {
+      message = JSON.stringify(e.response.data)
+    }
 
-  return await Counties.find()
+    throw {
+      type: 'quickbase_update_solarman_setting_error',
+      message: `${message || 'Error Occurred, Try again'}`
+    }
+  }
 }
-
