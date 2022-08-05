@@ -25,6 +25,6 @@
   },
   "homepage": "https://github.com/Nicanor008/kenya-regions#readme",
   "dependencies": {
-    "mongoose": "^6.4.7"
+    "axios": "^0.27.2"
   }
 }
