@@ -28,7 +28,7 @@ GetCounties.then((counties) => return counties)
 
 ## Contributors
 <a href="https://github.com/Nicanor008/kenya-regions/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=kenya-regions" />
+  <img src="https://contrib.rocks/image?repo=nicanor008/kenya-regions" />
 </a>
 
 ## Contributing
