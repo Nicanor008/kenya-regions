@@ -33,6 +33,14 @@ The following are the attributes of each Kenyan county
 - Population census as of 2009 and 2019
 - The former province name
 
+## Todo
+### In Progress
+- Host the API backend on a reliable environment
+
+### Future
+- Add types for typescript use cases
+- Support any programming language, not only JS
+
 ## Tools
 - JavaScript
 - Node.js v12 and above
