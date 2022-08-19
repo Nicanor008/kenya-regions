@@ -36,6 +36,7 @@ The following are the attributes of each Kenyan county
 ## Todo
 #### In Progress
 - Host the API backend on a reliable environment
+- Populating all 47 counties with the correct data
 
 #### Future
 - Add types for typescript use cases
