@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:4001/counties'
+const API_URL = 'https://kenya-regions.herokuapp.com/counties'
 
 // Retrieve all counties
 export const GetCounties = async () => {
