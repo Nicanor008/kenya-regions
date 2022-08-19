@@ -22,6 +22,17 @@ import { GetCounties } from 'kenya-regions'
 GetCounties.then((counties) => return counties)
 ```
 
+### What you'll get from GetCounties function
+The following are the attributes of each Kenyan county
+- county name
+- county code
+- county capital city
+- The sub counties in the county
+- The wards in each sub county
+- The area dimensions in square km
+- Population census as of 2009 and 2019
+- The former province name
+
 ## Tools
 - JavaScript
 - Node.js v12 and above
