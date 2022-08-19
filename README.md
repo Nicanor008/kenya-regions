@@ -34,10 +34,10 @@ The following are the attributes of each Kenyan county
 - The former province name
 
 ## Todo
-### In Progress
+#### In Progress
 - Host the API backend on a reliable environment
 
-### Future
+#### Future
 - Add types for typescript use cases
 - Support any programming language, not only JS
 
