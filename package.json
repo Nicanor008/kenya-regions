@@ -1,6 +1,6 @@
 {
   "name": "kenya-regions",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Kenya regions locations for use in applications. These consists of counties, sub-counties, constituencies and wards.",
   "main": "api/index.js",
   "type": "module",
