@@ -1,25 +1,60 @@
-<!-- [![Build Status](https://travis-ci.com/Nicanor008/Kenya-regions.svg?branch=setup/travis)](https://travis-ci.com/Nicanor008/Kenya-regions) -->
-
-# kenya-Regions
-Kenya has many and different regions and boundaries. These include:
+# kenya-regions
+A simple function to retrieve different data attributes of kenya regions like:
 - Counties
 - Sub Counties
 - Constituencies
 - Wards
 
-Each of these regions have different data. 
+## Usage 
+### Using `async`
+```
+import { GetCounties } from 'kenya-regions'
 
-# NOTE:
-This is still in development. First release will be coming on 20th August.
+const kenyaCounties = async () => {
+  return await GetCounties()
+}
+```
 
-### Idea
-As techies, we solve different humanitarian problems. We need reliable and sufficient data to solve specific regional problems. This projects aims at providing the required data to anybody who needs Kenya geographic related data.
+### Using Promises
+```
+import { GetCounties } from 'kenya-regions'
 
-### Tools
-- Node.js Version 12 and above
-- Express JS
+GetCounties.then((counties) => return counties)
+```
 
+## Tools
+- JavaScript
+- Node.js v12 and above
+
+## Contributors
+<a href="https://github.com/Nicanor008/kenya-regions/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=kenya-regions" />
+</a>
 
 ## Contributing
-#### System Requirements
+- **Fork** this repo
+- Clone the forked repo on your github profile
+- Install necessary dependencies
+- Work on your changes and push to your origin
+- Create a PR to the upstream repo(this repo)
 
+## License
+Copyright (c) 2022 Nicanor Korir
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
